@@ -1,0 +1,18 @@
+name: Windows Workflow Example
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: windows-latest  # Windows environment
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: 22ds1000103@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
